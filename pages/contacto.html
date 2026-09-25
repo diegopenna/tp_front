@@ -13,8 +13,13 @@
     
 </body>    
     <header>
-        <div><a href="../index.html">LOGO</a></div>
-        <nav>
+        <div class="div-header-logo">
+            <a class="header-logo" href="../index.html">
+                <img class="logo" src="../img/muscat.png" alt="Logo Muscat"> 
+            </a>
+        </div>
+        <h1>Tienda - Muscat Aromas & Deco </h1>
+        <nav class="header-nav">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
@@ -22,10 +27,45 @@
         </nav>
     </header>
     <main>
+        <section>
+            <h2>Contacto</h2>
+            <form class="contenedor-principal" action="https://formspree.io/f/xljrqyqr" method="POST">
 
+                <label for="nombre">Nombre</label>
+                <input type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    required
+                ></textarea>
+
+                <button class="btn" type="submit">Enviar</button>
+
+            </form>            
+        </section>
     </main>
     <footer>
-        
+        <p>Muscat Aromas & Deco · Hecho con amor</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="https://www.instagram.com/aromas.muscat/" target="_blank">Instagram</a></li>
+                <li><a href="https://wa.me/c/31404884787349"  target="_blank">Catálogo en WhatsApp</a></li>
+            </ul>
+        </nav>
     </footer>
 
 </html>
